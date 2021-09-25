@@ -1,4 +1,5 @@
 import org.jetbrains.compose.compose
+//import org.jetbrains.kotlin.gradle.plugin.mpp.apple.XCFramework
 
 plugins {
     kotlin("multiplatform")
@@ -16,6 +17,7 @@ kotlin {
             kotlinOptions.jvmTarget = "11"
         }
     }
+    //val xcf = XCFramework()
     iosX64 {
         binaries {
             framework {
@@ -30,6 +32,18 @@ kotlin {
             }
         }
     }
+//    listOf (
+//        iosX64(),
+//        iosArm64()
+//        //iosSimulatorArm64()
+//    ). forEach {
+//        it.binaries {
+//            framework {
+//                baseName = "common"
+//                xcf.add(this)
+//            }
+//        }
+//    }
     js(LEGACY) {
         binaries.executable()
         browser {

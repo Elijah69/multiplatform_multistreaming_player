@@ -5,3 +5,6 @@
 /android/build/
 /build/
 /common/build/
+/web/build/
+/common/ui/desktopAndAndroid/build/
+/common/ui/web/build/
